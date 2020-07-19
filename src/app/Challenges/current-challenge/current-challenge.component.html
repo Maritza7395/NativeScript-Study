@@ -1,0 +1,6 @@
+<StackLayout>
+    <Label class="textoinit" text="¡Escribe tus desafíos!"></Label>
+    <TextField hint="Título del desafío" [(ngModel)]="challengeDescription"></TextField>
+    <Button class="botonChallenge" (tap)="onSetChallenge()" text="Establecer desafío"></Button>
+    <Label class="title" [text]="currentChallenge"></Label>
+</StackLayout>
