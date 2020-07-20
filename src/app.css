@@ -25,7 +25,7 @@ The following CSS rule changes the font size of all Buttons that have the
     border-width: 1;
     border-color: purple;
     color: white;
-    width: 400;
+    width: 100%;
     padding: 5 10;
     border-radius: 30%;
     margin: 5 0;
@@ -40,7 +40,7 @@ FlexboxLayout{
 }
 
 GridLayout{
-    margin-top: 10%;
+    margin-top: 100px;
 }
 
 AbsoluteLayout{
