@@ -42,3 +42,7 @@ FlexboxLayout{
 GridLayout{
     margin-top: 10%;
 }
+
+AbsoluteLayout{
+    margin-top: 10%;
+}
