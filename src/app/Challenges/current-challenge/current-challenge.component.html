@@ -4,9 +4,15 @@
     <Button class="botonChallenge" (tap)="onSetChallenge()" text="Establecer desafío"></Button>
     <Label class="title" [text]="currentChallenge"></Label>
 </StackLayout> -->
-<GridLayout rows="auto,auto,*" columns="2*,*">
+<!-- <GridLayout rows="auto,auto,*" columns="2*,*">
     <Label class="textoinit" text="¡Escribe tus desafíos!" row="0" col="0" colSpan="2"></Label>
     <TextField hint="Título del desafío" [(ngModel)]="challengeDescription" row="1" col="0"></TextField>
     <Button class="botonChallenge" (tap)="onSetChallenge()" text="Establecer desafío" row="1" col="1"></Button>
     <Label class="title" [text]="currentChallenge" row="2" col="0" colSpan="2"></Label>
-</GridLayout>
+</GridLayout> -->
+
+<StackLayout>
+    <Label class="title" [text]="currentChallenge" horizontalAlignment="center"></Label>
+</StackLayout>
+
+
