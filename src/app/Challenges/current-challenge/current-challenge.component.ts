@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 
 export class CurrentChallengeComponent {
-    @Input() currentChallenge = "";
+    @Input() challenges: string[] = [];
 }
