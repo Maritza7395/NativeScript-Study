@@ -6,10 +6,7 @@ import { AppComponent } from "./app.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "@nativescript/angular/forms";
-import { StackComponent } from './layouts/stack/stack.component';
-import { FlexboxComponent } from './layouts/flexbox/flexbox.component';
-import { GridComponent } from './layouts/grid/grid.component';
-import { AbsoluteComponent } from './layouts/absolute/absolute.component';
+import { AppRoutingModule } from "./app-routing.module"
 import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
 import { AuthComponent } from './auth/auth.component';
 import { TodayComponent } from './challenges/today/today.component'
@@ -20,15 +17,12 @@ import { TodayComponent } from './challenges/today/today.component'
 @NgModule({
     imports: [
         NativeScriptModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        AppRoutingModule
     ],
     declarations: [
         AppComponent,
         CurrentChallengeComponent,
-        StackComponent,
-        FlexboxComponent,
-        GridComponent,
-        AbsoluteComponent,
         ChallengeEditComponent,
         AuthComponent,
         TodayComponent
