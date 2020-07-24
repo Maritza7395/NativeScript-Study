@@ -1,9 +1,12 @@
+<!-- Versión 1 -->
 <!-- <StackLayout>
     <Label class="textoinit" text="¡Escribe tus desafíos!"></Label>
     <TextField hint="Título del desafío" [(ngModel)]="challengeDescription"></TextField>
     <Button class="botonChallenge" (tap)="onSetChallenge()" text="Establecer desafío"></Button>
     <Label class="title" [text]="currentChallenge"></Label>
 </StackLayout> -->
+
+<!-- Versión 2 -->
 <!-- <GridLayout rows="auto,auto,*" columns="2*,*">
     <Label class="textoinit" text="¡Escribe tus desafíos!" row="0" col="0" colSpan="2"></Label>
     <TextField hint="Título del desafío" [(ngModel)]="challengeDescription" row="1" col="0"></TextField>
@@ -11,9 +14,22 @@
     <Label class="title" [text]="currentChallenge" row="2" col="0" colSpan="2"></Label>
 </GridLayout> -->
 
-<ScrollView>
+<!-- Versión 3 -->
+<!-- <ScrollView>
     <StackLayout>
         <Label class="title" [text]="challenge"
         horizontalAlignment="center" *ngFor="let challenge of challenges"></Label>
     </StackLayout>
-</ScrollView>
+</ScrollView> -->
+
+<!-- Versión 4 -->
+
+<ListView [items]="challenges" (itemTap)="onItemTap($event)">
+    <ng-template let-challenge="item" let-i="index">
+        <GridLayout rows="40,auto" columns="50,*">
+            <Label [text]="i" row="0" col="0" rowSpan="2"></Label>
+            <Label [text]="challenge" row="0" col="1"></Label>
+            <Label text="ItemContent row 2" row="1" col="1"></Label>
+        </GridLayout>
+    </ng-template>
+</ListView>
