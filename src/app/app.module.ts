@@ -10,7 +10,9 @@ import { StackComponent } from './layouts/stack/stack.component';
 import { FlexboxComponent } from './layouts/flexbox/flexbox.component';
 import { GridComponent } from './layouts/grid/grid.component';
 import { AbsoluteComponent } from './layouts/absolute/absolute.component';
-import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component'
+import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
+import { AuthComponent } from './auth/auth.component';
+import { TodayComponent } from './challenges/today/today.component'
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -27,7 +29,9 @@ import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-ed
         FlexboxComponent,
         GridComponent,
         AbsoluteComponent,
-        ChallengeEditComponent
+        ChallengeEditComponent,
+        AuthComponent,
+        TodayComponent
     ],
     bootstrap: [
         AppComponent
