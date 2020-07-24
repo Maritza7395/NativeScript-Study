@@ -9,9 +9,9 @@ import { ItemEventData } from 'tns-core-modules/ui/list-view';
 })
 
 export class CurrentChallengeComponent {
-    @Input() challenges: string[] = [];
+    @Input() challengeTitle = '';
 
-    onItemTap(args: ItemEventData){
-        console.log(args)
-    }
+    // onItemTap(args: ItemEventData){
+    //     console.log(args)
+    // }
 }

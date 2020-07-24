@@ -14,7 +14,7 @@
     <Label class="title" [text]="currentChallenge" row="2" col="0" colSpan="2"></Label>
 </GridLayout> -->
 
-<!-- Versión 3 -->
+<!-- Versión 3 ScrollView -->
 <!-- <ScrollView>
     <StackLayout>
         <Label class="title" [text]="challenge"
@@ -22,9 +22,8 @@
     </StackLayout>
 </ScrollView> -->
 
-<!-- Versión 4 -->
-
-<ListView [items]="challenges" (itemTap)="onItemTap($event)">
+<!-- Versión 4 ListView -->
+<!-- <ListView [items]="challenges" (itemTap)="onItemTap($event)">
     <ng-template let-challenge="item" let-i="index">
         <GridLayout rows="40,auto" columns="50,*">
             <Label [text]="i" row="0" col="0" rowSpan="2"></Label>
@@ -32,4 +31,9 @@
             <Label text="ItemContent row 2" row="1" col="1"></Label>
         </GridLayout>
     </ng-template>
-</ListView>
+</ListView> -->
+
+<!-- Versión 5 Depuración -->
+<StackLayout>
+    <Label class="title" [text]="challengeTitle" horizontalAlignment="center"></Label>
+</StackLayout>
