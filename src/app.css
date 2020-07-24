@@ -20,7 +20,7 @@ This is where the vast majority of your CSS code goes. */
 The following CSS rule changes the font size of all Buttons that have the
 "-primary" class modifier.
 */
-.botonChallenge {
+.btn {
     background: purple;
     border-width: 1;
     border-color: purple;
@@ -32,11 +32,11 @@ The following CSS rule changes the font size of all Buttons that have the
 }
 
 StackLayout{
-    margin-top: 10%;
+    margin-top: 100px;
 }
 
 FlexboxLayout{
-    margin-top: 10%;
+    margin-top: 100px;
 }
 
 GridLayout{
@@ -44,5 +44,5 @@ GridLayout{
 }
 
 AbsoluteLayout{
-    margin-top: 10%;
+    margin-top: 100px;
 }
