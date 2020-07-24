@@ -1,0 +1,27 @@
+/* Add mobile styles for the component here.  */
+GridLayout{
+    border-color: chartreuse;
+    border-width: 5;
+}
+
+Label{
+    /* width: 60;
+    height: 60; */
+    color: white;
+}
+
+#i1{
+    background: darkorange;
+}
+
+#i2{
+    background: palegreen
+}
+
+#i3{
+    background: darkcyan;
+}
+
+#i4{
+    background: darkblue;
+}
