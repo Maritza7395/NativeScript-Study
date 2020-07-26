@@ -10,7 +10,8 @@ import { AppRoutingModule } from "./app-routing.module"
 import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
 import { AuthComponent } from './auth/auth.component';
 import { TodayComponent } from './challenges/today/today.component';
-import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component'
+import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
+import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component'
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -27,7 +28,8 @@ import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component'
         ChallengeEditComponent,
         AuthComponent,
         TodayComponent,
-        ActionBarComponent
+        ActionBarComponent,
+        ChallengeTabsComponent
     ],
     bootstrap: [
         AppComponent
