@@ -28,6 +28,7 @@
     "@nativescript/theme": "~2.3.0",
     "@schematics/angular": "^9.1.11",
     "copy-webpack-plugin": "^5.1.1",
+    "nativescript-ui-sidedrawer": "^8.0.1",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.5.0",
     "tns-core-modules": "~6.5.0",

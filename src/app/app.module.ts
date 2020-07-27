@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "@nativescript/angular";
-
+import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular/side-drawer-directives";
 import { CurrentChallengeComponent } from "./Challenges/current-challenge/current-challenge.component"
 import { AppComponent } from "./app.component";
 
@@ -20,7 +20,8 @@ import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-ta
     imports: [
         NativeScriptModule,
         NativeScriptFormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NativeScriptUISideDrawerModule
     ],
     declarations: [
         AppComponent,
