@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { ItemEventData } from 'tns-core-modules/ui/list-view';
-import { RouterExtensions } from '@nativescript/angular/router';
+import { Component, Input, ViewContainerRef } from '@angular/core';
+import { ModalDialogService } from '@nativescript/angular/modal-dialog';
+import { DayModalComponent } from '../day-modal/day-modal.component';
 @Component({
     selector: 'ns-current-challenge',
     templateUrl: './current-challenge.component.html',
@@ -10,13 +10,12 @@ import { RouterExtensions } from '@nativescript/angular/router';
 
 export class CurrentChallengeComponent {
 
-    constructor(private router: RouterExtensions){}
+    constructor(
+        private modalDialog: ModalDialogService,
+        private vcRef: ViewContainerRef
+    ){}
 
-    @Input() challengeTitle = '';
-
-    onEdit(){
-        this.router.navigate(['/challenges/edit'], {
-            transition: { name: 'slideLeft' }
-        })
+    onChangeStatus(){
+        this.modalDialog.showModal(DayModalComponent, {fullscreen: true, viewContainerRef: this.vcRef});
     }
 }

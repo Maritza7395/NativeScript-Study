@@ -11,7 +11,8 @@ import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-ed
 import { AuthComponent } from './auth/auth.component';
 import { TodayComponent } from './challenges/today/today.component';
 import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
-import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component'
+import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component';
+import { DayModalComponent } from './challenges/day-modal/day-modal.component'
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -30,7 +31,8 @@ import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-ta
         AuthComponent,
         TodayComponent,
         ActionBarComponent,
-        ChallengeTabsComponent
+        ChallengeTabsComponent,
+        DayModalComponent
     ],
     bootstrap: [
         AppComponent
@@ -38,6 +40,9 @@ import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-ta
     providers: [],
     schemas: [
         NO_ERRORS_SCHEMA
+    ],
+    entryComponents:[
+        DayModalComponent
     ]
 })
 /*
