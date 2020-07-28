@@ -15,7 +15,11 @@
       "baseUrl": ".",
       "paths": {
           "~/*": [
-              "app/*"
+              "src/*"
+          ],
+          "*": [
+              "./node_modules/tns-core-modules/*",
+              "./node_modules/*"
           ]
       }
   },
@@ -26,8 +30,13 @@
     "./src/main.ts"
   ],
   "exclude": [
-      "node_modules",
-      "platforms",
-      "e2e"
+    "node_modules",
+    "platforms",
+    "**/*.tns.ts",
+    "**/*.android.ts",
+    "**/*.ios.ts",
+    "**/*.spec.ts",
+    "node_modules",
+    "**/*.aot.ts"
   ]
 }

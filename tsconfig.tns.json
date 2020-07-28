@@ -1,7 +1,15 @@
 {
     "extends": "./tsconfig",
     "compilerOptions": {
-        "module": "ESNext",
+        "module": "es2015",
         "moduleResolution": "node"
-    }
+    },
+    "exclude": [
+      "**/*.tns.ts",
+      "**/*.android.ts",
+      "**/*.ios.ts",
+      "**/*.spec.ts",
+      "e2e",
+      "projects"
+  ]
 }
