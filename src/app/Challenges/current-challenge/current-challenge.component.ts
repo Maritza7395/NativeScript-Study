@@ -15,12 +15,8 @@ export class CurrentChallengeComponent {
     @Input() challengeTitle = '';
 
     onEdit(){
-        this.router.navigate(['/edit-challenge'], {
+        this.router.navigate(['/challenges/edit'], {
             transition: { name: 'slideLeft' }
         })
     }
-
-    // onItemTap(args: ItemEventData){
-    //     console.log(args)
-    // }
 }
