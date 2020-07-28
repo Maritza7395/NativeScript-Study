@@ -1,6 +1,6 @@
 {
   "nativescript": {
-    "id": "org.nativescript.myproject",
+    "id": "org.nativescript.challenges",
     "tns-android": {
       "version": "6.5.0"
     },

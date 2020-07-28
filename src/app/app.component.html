@@ -1,9 +1,9 @@
 <!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
 
 <RadSideDrawer>
-    <StackLayout tkDrawerContent>
-        <Button text="Logout" class="btn"></Button>
-    </StackLayout>
+    <FlexboxLayout tkDrawerContent>
+        <Button text="Logout" class="btn" nsRouterLink="/" [clearHistory]="true" (tap)="onLogout()"></Button>
+    </FlexboxLayout>
     <StackLayout tkMainContent>
         <page-router-outlet></page-router-outlet>
     </StackLayout>

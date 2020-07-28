@@ -1,23 +1,29 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { isAndroid } from 'tns-core-modules/platform'
 import { Page } from 'tns-core-modules/ui/page'
-import { RouterExtensions } from '@nativescript/angular';
+import { RouterExtensions } from '@nativescript/angular/router';
+import { UIService } from '../../ui.service';
 
 declare var android: any;
 
 @Component({
   selector: 'ns-action-bar',
   templateUrl: './action-bar.component.html',
-  styleUrls: ['./action-bar.component.css']
+  styleUrls: ['./action-bar.component.css'],
+  moduleId: module.id
 })
 export class ActionBarComponent implements OnInit {
 
   @Input() title: string;
   @Input() showBackButton = true;
 
-  constructor(private page: Page, private router: RouterExtensions) { }
+  constructor(
+      private page: Page,
+      private router: RouterExtensions,
+      private uiService: UIService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   get android(){
@@ -41,5 +47,8 @@ export class ActionBarComponent implements OnInit {
         }
     }
 }
+onToggleMenu() {
+    this.uiService.toggleDrawer();
+  }
 
 }
