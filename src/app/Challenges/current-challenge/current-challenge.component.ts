@@ -22,7 +22,8 @@ export class CurrentChallengeComponent {
             fullscreen: true,
             viewContainerRef: this.uiService.getRootVcRef()
             ? this.uiService.getRootVcRef()
-            : this.vcRef
+            : this.vcRef,
+            context: { date: new Date() }
         });
     }
 }
