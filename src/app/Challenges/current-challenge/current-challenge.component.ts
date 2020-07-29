@@ -24,6 +24,8 @@ export class CurrentChallengeComponent {
             ? this.uiService.getRootVcRef()
             : this.vcRef,
             context: { date: new Date() }
+        }).then((action: string) => {
+            console.log("action: ", action)
         });
     }
 }

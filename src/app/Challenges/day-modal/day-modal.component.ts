@@ -18,4 +18,8 @@ export class DayModalComponent implements OnInit {
         this.loadedDate = (this.modaleParams.context as { date: Date }).date
     }
 
+    onHandleInput(action: string){
+        this.modaleParams.closeCallback(action);
+    }
+
 }
