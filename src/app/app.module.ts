@@ -1,18 +1,15 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "@nativescript/angular";
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular/side-drawer-directives";
-import { CurrentChallengeComponent } from "./Challenges/current-challenge/current-challenge.component"
 import { AppComponent } from "./app.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 import { NativeScriptFormsModule } from "@nativescript/angular/forms";
-import { AppRoutingModule } from "./app-routing.module"
-import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
+import { AppRoutingModule } from "./app-routing.module";
 import { AuthComponent } from './auth/auth.component';
-import { TodayComponent } from './challenges/today/today.component';
 import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
-import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component';
-import { DayModalComponent } from './Challenges/day-modal/day-modal.component'
+import { DayModalComponent } from './challenges/day-modal/day-modal.component';
+import { SharedModule } from './shared/shared.module';
 
 // Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
 // import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
@@ -21,17 +18,13 @@ import { DayModalComponent } from './Challenges/day-modal/day-modal.component'
     imports: [
         NativeScriptModule,
         NativeScriptFormsModule,
+        NativeScriptUISideDrawerModule,
         AppRoutingModule,
-        NativeScriptUISideDrawerModule
+        SharedModule
     ],
     declarations: [
         AppComponent,
-        CurrentChallengeComponent,
-        ChallengeEditComponent,
         AuthComponent,
-        TodayComponent,
-        ActionBarComponent,
-        ChallengeTabsComponent,
         DayModalComponent
     ],
     bootstrap: [
