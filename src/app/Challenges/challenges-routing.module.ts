@@ -11,25 +11,28 @@ const routes: Routes = [
         path: 'tabs',
         component: ChallengeTabsComponent,
         children: [
-          { path: 'today', component: TodayComponent, outlet: 'today' },
-          {
-            path: 'current-challenge',
-            component: CurrentChallengeComponent,
-            outlet: 'currentChallenge'
-          }
+            { path: 'today', component: TodayComponent, outlet: 'today' },
+            {
+                path: 'current-challenge',
+                component: CurrentChallengeComponent,
+                outlet: 'currentChallenge'
+            }
         ]
-      },
-    { path: ':mode', component: ChallengeEditComponent },
+    },
+    {
+        path: ':mode', loadChildren: () =>
+            import('./challenge-edit/challenge-edit.module').then(m => m.ChallengeEditModule)
+    },
     { path: '', redirectTo: '/challenges/tabs', pathMatch: 'full' }
 ];
 
 @NgModule({
-    imports:[
+    imports: [
         NativeScriptRouterModule.forChild(routes)
     ],
-    exports:[
+    exports: [
         NativeScriptRouterModule
     ]
 })
 
-export class ChallengesRoutingModule {}
+export class ChallengesRoutingModule { }
