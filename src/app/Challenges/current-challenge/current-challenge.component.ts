@@ -5,7 +5,8 @@ import { UIService } from '~/app/shared/ui.service';
 @Component({
     selector: 'ns-current-challenge',
     templateUrl: './current-challenge.component.html',
-    styleUrls: ['./current-challenge.component.css'],
+    styleUrls: ['./current-challenge.component.common.css',
+    './current-challenge.component.css'],
     moduleId: module.id
 })
 
@@ -15,14 +16,14 @@ export class CurrentChallengeComponent {
         private modalDialog: ModalDialogService,
         private vcRef: ViewContainerRef,
         private uiService: UIService
-    ){}
+    ) { }
 
-    onChangeStatus(){
+    onChangeStatus() {
         this.modalDialog.showModal(DayModalComponent, {
             fullscreen: true,
             viewContainerRef: this.uiService.getRootVcRef()
-            ? this.uiService.getRootVcRef()
-            : this.vcRef,
+                ? this.uiService.getRootVcRef()
+                : this.vcRef,
             context: { date: new Date() }
         }).then((action: string) => {
             console.log("action: ", action)

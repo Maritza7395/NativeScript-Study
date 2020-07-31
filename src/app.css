@@ -10,7 +10,7 @@ of writing your own CSS rules. You can learn more about the
 NativeScript core theme at https://github.com/nativescript/theme
 The imported CSS rules must precede all other types of rules.
 */
-@import "~@nativescript/theme/css/core.css";
+
 @import "~@nativescript/theme/css/default.css";
 
 /* Place any CSS rules you want to apply on both iOS and Android here.
@@ -20,38 +20,5 @@ This is where the vast majority of your CSS code goes. */
 The following CSS rule changes the font size of all Buttons that have the
 "-primary" class modifier.
 */
-.btn {
-    background: purple;
-    border-width: 1;
-    border-color: purple;
-    color: white;
-    width: 100%;
-    padding: 5 10;
-    border-radius: 30%;
-    margin: 5 0;
-}
 
-.drawer-container{
-    background: linear-gradient(140deg, #2b0c72, #5c3fa0);
-    horizontal-align: left;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20;
-}
 
-/* StackLayout{
-    margin-top: 100px;
-}
-
-FlexboxLayout{
-    margin-top: 100px;
-}
-
-GridLayout{
-    margin-top: 100px;
-}
-
-AbsoluteLayout{
-    margin-top: 100px;
-} */
