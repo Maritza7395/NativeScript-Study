@@ -7,7 +7,6 @@ import { AppComponent } from "./app.component";
 import { NativeScriptFormsModule } from "@nativescript/angular/forms";
 import { AppRoutingModule } from "./app-routing.module";
 import { AuthComponent } from './auth/auth.component';
-import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
 import { DayModalComponent } from './challenges/day-modal/day-modal.component';
 import { SharedModule } from './shared/shared.module';
 
