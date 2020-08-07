@@ -2,10 +2,10 @@
   "nativescript": {
     "id": "org.nativescript.challenges",
     "tns-android": {
-      "version": "6.5.0"
+      "version": "6.5.3"
     },
     "tns-ios": {
-      "version": "6.5.0"
+      "version": "6.5.2"
     }
   },
   "description": "NativeScript Application",
