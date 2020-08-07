@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodayComponent implements OnInit {
 
+  isHighlighted = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDemo(){
+    this.isHighlighted = !this.isHighlighted;
   }
 
 }
