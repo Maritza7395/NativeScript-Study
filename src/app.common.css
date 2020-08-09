@@ -1,4 +1,5 @@
 @import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/forest.css";
 
 .form-control{
     border-bottom-color: #7c015d;

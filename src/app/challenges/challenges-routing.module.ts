@@ -3,7 +3,6 @@ import { NativeScriptRouterModule } from '@nativescript/angular/router'
 import { Routes } from '@angular/router';
 import { TodayComponent } from './today/today.component';
 import { CurrentChallengeComponent } from './current-challenge/current-challenge.component';
-import { ChallengeEditComponent } from './challenge-edit/challenge-edit.component';
 import { ChallengeTabsComponent } from './challenge-tabs/challenge-tabs.component';
 
 const routes: Routes = [
